@@ -77,7 +77,7 @@ class NvidiaCNURLExtractor:
 
 
 def main():
-    st.title("NVIDIA Chaina Brand URL Explorer")
+    st.title("NVIDIA China Brand URL Explorer")
 
     # Initialize extractor
     extractor = NvidiaCNURLExtractor()
