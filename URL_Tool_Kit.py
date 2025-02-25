@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 from typing import List, Dict
 import re
 import cn_brand_pages
+import status_code_Main
 
 class URLToolkit:
     def __init__(self):
@@ -176,7 +177,7 @@ def main():
     # Sidebar navigation
     page = st.sidebar.radio(
         "Select Tool",
-        ["Local Page Scraper", "Live to Author Converter", "Author to live Converter", "Live To Preview Converter", "Preview To Live Converter", "US Brand Pages", "CN Brand Pages", "Driver URLS"]
+        ["Local Page Scraper", "Live to Author Converter", "Author to live Converter", "Live To Preview Converter", "Preview To Live Converter", "US Brand Pages", "CN Brand Pages", "Driver URLS","Status Code Checker"]
     )
 
     if page == "Local Page Scraper":
@@ -481,6 +482,7 @@ def main():
                     "\n".join(converted_urls),
                     height=300
                 )
-
+        elif page=="Status Code Checker":
+        status_code_Main.main()
 if __name__ == "__main__":
     main()
