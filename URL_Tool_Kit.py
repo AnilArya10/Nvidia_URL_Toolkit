@@ -482,7 +482,7 @@ def main():
                     "\n".join(converted_urls),
                     height=300
                 )
-        elif page=="Status Code Checker":
+    elif page=="Status Code Checker":
         status_code_Main.main()
 if __name__ == "__main__":
     main()
